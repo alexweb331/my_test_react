@@ -4,5 +4,9 @@ import react from '@vitejs/plugin-react'
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base:'/qr_code'
+  base: '/', // для GitHub Pages используйте '/репозиторий/'
+  build: {
+    outDir: 'dist',
+    sourcemap: false
+  }
 })
